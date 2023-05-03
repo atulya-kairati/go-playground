@@ -6,13 +6,35 @@ import (
 
 func main() {
   fmt.Println("Hi gophers!")
+  
+  const pi = 3.14
+  const (
+    a = "a"
+    b = "b"
+  )
+  fmt.Println(pi, a,b)
+  
+  const (
+    x = 5
+    y
+    z
+  ) // x = y = z = 5
+  fmt.Println(x,y,z)
+  
+  const (
+    d = iota // + 5
+    e
+    f
+  ) // d = 0, e = 1, f = 2
+  fmt.Println(d,e,f)
+  
 
   var s, t string = "Chunni Lal", "Ttt"
   fmt.Println(s, t)
   
-  e := 4
-  x, y := 3, "r"
-  fmt.Println(e, x, y)
+  ee := 4
+  xx, yy := 3, "r"
+  fmt.Println(ee, xx, yy)
   
   var (
     one = 1
@@ -26,8 +48,8 @@ func main() {
   arr[2] = 3
   fmt.Println(arr)
 
-  b := append(arr, 3, 4, 5)
-  fmt.Println(b)
+  bb := append(arr, 3, 4, 5)
+  fmt.Println(bb)
   
   var m = make(map[int]string)
   m[1] = "Monday"
@@ -37,7 +59,7 @@ func main() {
   var ptr = &arr
   fmt.Println(ptr)
   fmt.Println(*ptr)
-  *ptr = b[4:]
+  *ptr = bb[4:]
   fmt.Println(arr)
   
 }
