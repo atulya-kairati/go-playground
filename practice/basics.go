@@ -7,8 +7,19 @@ import (
 func main() {
   fmt.Println("Hi gophers!")
 
-  var s string = "Chunni Lal"
-  fmt.Println(s)
+  var s, t string = "Chunni Lal", "Ttt"
+  fmt.Println(s, t)
+  
+  e := 4
+  x, y := 3, "r"
+  fmt.Println(e, x, y)
+  
+  var (
+    one = 1
+    two = 2
+  )
+  
+  fmt.Println(one, two)
 
   var arr = make([]int, 5)
   arr[0] = 1
