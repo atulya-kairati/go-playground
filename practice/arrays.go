@@ -12,10 +12,10 @@ func main() {
   fmt.Printf("%T: %s\n", arr, arr)
   fmt.Println(len(arr))
   
-  // creating an array using values
+  // ====> NOTE: This is not an array
+  // This is a slice since it doesn't have a size in type
   arr2 := []int{3,56,7,3}
   fmt.Printf("%T: %d\n", arr2, arr2)
-  fmt.Println(len(arr2))
   
   // the values will be assigned from the start
   arr3 := [10]int{2,2,56}
@@ -54,7 +54,6 @@ func main() {
 [5]string: [    ]
 5
 []int: [3 56 7 3]
-4
 [10]int: [2 2 56 0 0 0 0 0 0 0]
 [10]int: [1 4 0 0 0 45 0 0 72 0]
 [4]int: [3 56 7 3]
